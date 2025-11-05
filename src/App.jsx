@@ -6,7 +6,7 @@ import { Footer } from './components/Footer/Footer'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetailContainer'
 import { CartProvider } from './context/CartContext/CartProvider'
-import { Cart } from './components/Cart/cart'
+import { Cart } from './components/Cart/Cart'
 import { ProductFormContainer } from './components/adminComponents/ProductFormContainer/ProductFormContainer'
 
 
