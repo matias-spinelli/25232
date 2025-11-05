@@ -2,6 +2,7 @@ import { validateProduct } from "../../../utils/validateProducts";
 import { ProductFormUI } from "../ProductFormUI/ProductFormUI";
 import { uploadToImgbb } from "../../../services/uploadImage";
 import { createProducts } from "../../../services/products";
+import { useState } from "react";
 import "../ProductFormContainer/ProductFormContainer.css"
 
 export const ProductFormContainer = () => {
