@@ -1,26 +1,58 @@
 [
-    {
-        "id": "1",
-        "name": "Budin de limon",
-        "price": 4500,
-        "category": "dulce",
-        "description": "Budin humedo de limon con glaseado casero.",
-        "imageUrl": "/images/budn-limon.jpg"
-    },
-    {
-        "id": "2",
-        "name": "Pan de masa madre",
-        "price": 3200,
-        "category": "salado",
-        "description": "Hogaza de 750 g con fermentacion lenta de 24 horas",
-        "imageUrl": "/images/pan-masa-madre.jpg"
-    },
-    {
-        "id": "3",
-        "name": "Croissant de manteca",
-        "price": 1200,
-        "category": "dulce",
-        "description": "Hojaldre 100% manteca, crujiente por fuera y tierno por dentro",
-        "imageUrl": "/images/croissant.jpg"
-    }
+  {
+    "id": "1",
+    "name": "Tira de Asado",
+    "price": 9500,
+    "category": "carnes",
+    "description": "Corte clásico del asado argentino, jugoso y con hueso. Ideal para la parrilla lenta.",
+    "imageUrl": "/images/tira-asado.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Vacio",
+    "price": 8700,
+    "category": "carnes",
+    "description": "Corte sabroso con grasa justa, perfecto para sellar y disfrutar bien cocido o jugoso.",
+    "imageUrl": "/images/vacio.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Ojo de Bife",
+    "price": 11000,
+    "category": "carnes",
+    "description": "Corte premium con alto marmoleo, tierno y lleno de sabor. Para los que saben.",
+    "imageUrl": "/images/ojo-bife.jpeg"
+  },
+  {
+    "id": "4",
+    "name": "Chorizo Parrillero",
+    "price": 1200,
+    "category": "achuras",
+    "description": "Chori criollo de puro cerdo, infaltable en cualquier asado argentino.",
+    "imageUrl": "/images/chorizo.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Morcilla",
+    "price": 1000,
+    "category": "achuras",
+    "description": "Clásica morcilla parrillera, cremosa por dentro y crocante por fuera.",
+    "imageUrl": "/images/morcilla.webp"
+  },
+  {
+    "id": "6",
+    "name": "Chinchulín",
+    "price": 800,
+    "category": "achuras",
+    "description": "Crocante y dorado, con el sabor más auténtico del asado de campo.",
+    "imageUrl": "/images/chinchulin.jpeg"
+  },
+  {
+    "id": "7",
+    "name": "Empanadas de Carne",
+    "price": 600,
+    "category": "otros",
+    "description": "Empanadas jugosas con carne cortada a cuchillo, porque siempre hay lugar para una más.",
+    "imageUrl": "/images/empanadas.jpeg"
+  }
 ]

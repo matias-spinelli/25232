@@ -21,37 +21,33 @@ chinchulin la especialidad de la casa
 
  */
 function App() {
-const arrayProductos = [
-  {id: 1, nombre: "Remera", precio: 20000, descripcion: "Remera de algodon"},
-  {id: 2, nombre: "Pantalon", precio: 80000, descripcion: "Pantalon de Jean"},
-  {id: 3, nombre: "Zapatillas", precio: 110000, descripcion: "Zapatillas deportivas"},
-]
+
   return (
-    <>
     <BrowserRouter>
       <CartProvider>
-      <div>
-        <Header/>
-        
-        <Routes>
-          <Route 
-            path={"/"} 
-            element={ <ItemListContainer titulo={"Bienvenidos a la tienda de Embark"} />}
-          />
-          <Route 
-            path={"/category/:category"} 
-            element={ <ItemListContainer titulo={"Bienvenidos a la tienda de Embark"} />}
-          />
-          <Route path={"/detail/:id"} element={ <ItemDetailContainer />}/>
-          <Route path={"/carrito"} element={ <Cart /> }/>
-          <Route path={"/admin"} element={ <ProductFormContainer /> }/>
-        
-        </Routes>
-        <Footer/>
-      </div>
+        <div className="app-layout">
+          <Header />
+
+          <main>
+            <Routes>
+              <Route
+                path={"/"}
+                element={<ItemListContainer titulo={"Bienvenidos a la tienda de Embark"} />}
+              />
+              <Route
+                path={"/category/:category"}
+                element={<ItemListContainer titulo={"Bienvenidos a la tienda de Embark"} />}
+              />
+              <Route path={"/detail/:id"} element={<ItemDetailContainer />} />
+              <Route path={"/carrito"} element={<Cart />} />
+              <Route path={"/admin"} element={<ProductFormContainer />} />
+            </Routes>
+          </main>
+
+          <Footer />
+        </div>
       </CartProvider>
     </BrowserRouter>
-    </>
   )
 }
 

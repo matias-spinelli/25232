@@ -1,0 +1,36 @@
+.item-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem; /* separación entre cards */
+  justify-items: center;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 2.5rem; /* más padding horizontal */
+  box-sizing: border-box;
+}
+
+.item-list a {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  max-width: 260px;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.item-list a:hover {
+  transform: translateY(-4px);
+  filter: brightness(1.1);
+}
+
+/* Mensaje vacío */
+.item-list-empty {
+  text-align: center;
+  color: var(--color-text-light);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  opacity: 0.8;
+  margin-top: 3rem;
+}

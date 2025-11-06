@@ -1,0 +1,32 @@
+header {
+  background: linear-gradient(135deg, #2b1d0e 0%, #3c2a16 100%);
+  color: var(--color-text-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-bottom: 3px solid var(--color-secondary);
+  box-shadow: var(--shadow-strong);
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 1px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-sizing: border-box;
+}
+
+.logo {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  text-shadow: 0 0 8px rgba(255, 180, 70, 0.8);
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.logo:hover {
+  color: var(--color-accent);
+  transform: scale(1.05);
+}

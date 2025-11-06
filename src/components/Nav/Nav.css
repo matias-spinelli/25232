@@ -1,0 +1,50 @@
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  position: relative;
+}
+
+nav a {
+  color: var(--color-text-light);
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  padding: 0.3rem 0;
+}
+
+nav a:hover {
+  color: var(--color-primary);
+  text-shadow: 0 0 8px rgba(255, 204, 51, 0.7);
+}
+
+.in-cart {
+  background-color: var(--color-secondary);
+  color: var(--color-text-dark);
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.9rem;
+  position: absolute;
+  top: -10px;
+  right: -14px;
+  box-shadow: 0 0 10px rgba(255, 140, 0, 0.7);
+  transition: transform 0.2s ease;
+}
+
+.in-cart:hover {
+  transform: scale(1.1);
+}
