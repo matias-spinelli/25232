@@ -17,16 +17,30 @@ header {
   box-sizing: border-box;
 }
 
+/* 🔥 Logo actualizado */
 .logo {
-  color: var(--color-primary);
+  display: flex;
+  align-items: center;
   text-decoration: none;
-  font-size: 2rem;
-  letter-spacing: 1px;
-  text-shadow: 0 0 8px rgba(255, 180, 70, 0.8);
-  transition: color 0.3s ease, transform 0.2s ease;
+  transition: transform 0.2s ease, filter 0.2s ease;
 }
 
-.logo:hover {
-  color: var(--color-accent);
+.logo img {
+  height: 64px;
+  width: auto;
+  display: block;
+  filter: drop-shadow(0 0 8px rgba(255, 179, 71, 0.5));
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.logo:hover img {
   transform: scale(1.05);
+  filter: drop-shadow(0 0 12px rgba(255, 204, 0, 0.8));
+}
+
+/* 📱 Responsive */
+@media (max-width: 600px) {
+  .logo img {
+    height: 48px;
+  }
 }

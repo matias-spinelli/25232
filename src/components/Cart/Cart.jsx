@@ -2,6 +2,7 @@ import "./Cart.css";
 import { useCartContext } from "../../context/CartContext/useCartContext";
 import { Link } from "react-router-dom";
 import { Item } from "../Item/Item";
+import { formatPrice } from "../../utils/priceFormatter";
 
 export const Cart = () => {
     const { cart, clearCart, deleteItem, total, checkout } = useCartContext();
@@ -11,22 +12,24 @@ export const Cart = () => {
             <h2> Carrito de compras </h2>
 
             {cart.length ? (
-                cart.map((prod) => (
-                    <Item key={prod.id} {...prod}>
-                        <span>Cantidad: {prod.quantity}</span>
-                        <button className="btn" onClick={() => deleteItem(prod.id)}>
-                            Eliminar
-                        </button>
-                    </Item>
-                )) 
-            ): (
-                <p>Tu carrito esta vacio</p>
+            <div className="cart-grid">
+                {cart.map((prod) => (
+                <Item key={prod.id} {...prod}>
+                    <span>Cantidad: {prod.quantity}</span>
+                    <button className="btn" onClick={() => deleteItem(prod.id)}>
+                    Eliminar
+                    </button>
+                </Item>
+                ))}
+            </div>
+            ) : (
+            <p>Tu carrito está vacío</p>
             )}
 
             {cart.length ? ( 
                 <div className="btn-container">
                     <div className="total-pagar">
-                        <p>Total a pagar: ${total()}</p>
+                        <p>Total a pagar: {formatPrice(total())}</p>
                     </div>
                     <button className="btn" onClick={checkout}>
                         Finalizar compra

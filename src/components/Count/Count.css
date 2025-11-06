@@ -1,0 +1,88 @@
+.count-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 220px;
+  margin: 0 auto;
+}
+
+.count-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.count-buttons .btn {
+  width: 38px;
+  height: 38px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 2px solid var(--color-primary);
+  border-radius: 10px;
+  background-color: transparent;
+  color: var(--color-primary);
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.count-buttons .btn:hover:not(:disabled) {
+  background-color: var(--color-primary);
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.count-buttons .btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.count-buttons span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  min-width: 30px;
+  text-align: center;
+}
+
+.btn-add {
+  background-color: var(--color-primary);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.btn-add:hover:not(:disabled) {
+  transform: scale(1.05);
+  background-color: var(--color-secondary);
+}
+
+.btn-add:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 480px) {
+  .count-container {
+    max-width: 180px;
+    gap: 0.5rem;
+  }
+
+  .count-buttons .btn {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+
+  .btn-add {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}

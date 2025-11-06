@@ -3,6 +3,7 @@ nav {
   align-items: center;
 }
 
+/* 🧱 Desktop */
 nav ul {
   display: flex;
   align-items: center;
@@ -24,6 +25,9 @@ nav a {
   letter-spacing: 1px;
   transition: color 0.3s ease, text-shadow 0.3s ease;
   padding: 0.3rem 0;
+  display: inline-block;
+  position: relative;
+  padding-right: 1.8rem;
 }
 
 nav a:hover {
@@ -31,20 +35,91 @@ nav a:hover {
   text-shadow: 0 0 8px rgba(255, 204, 51, 0.7);
 }
 
+/* 🟠 Badge */
 .in-cart {
   background-color: var(--color-secondary);
   color: var(--color-text-dark);
   font-weight: bold;
   border-radius: 50%;
-  padding: 0.2rem 0.5rem;
-  font-size: 0.9rem;
+  padding: 0.25rem 0.55rem;
+  font-size: 0.8rem;
   position: absolute;
-  top: -10px;
-  right: -14px;
+  top: -8px;
+  right: 0;
   box-shadow: 0 0 10px rgba(255, 140, 0, 0.7);
   transition: transform 0.2s ease;
+  line-height: 1;
 }
 
 .in-cart:hover {
   transform: scale(1.1);
+}
+
+/* 🍔 Hamburguesa (solo visible en mobile) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: var(--color-primary);
+  transition: all 0.3s ease;
+}
+
+/* 📱 Mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  nav ul {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #2b1d0e;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 1.5rem 2rem;
+    border-bottom-left-radius: 12px;
+    box-shadow: var(--shadow-strong);
+    transform: translateY(-120%);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+
+  nav.open ul {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  nav a {
+    font-size: 1.4rem;
+  }
+
+  .in-cart {
+    top: 0;
+    right: -20px;
+  }
+
+  /* animación del ícono */
+  nav.open .hamburger span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  nav.open .hamburger span:nth-child(2) {
+    opacity: 0;
+  }
+
+  nav.open .hamburger span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
 }

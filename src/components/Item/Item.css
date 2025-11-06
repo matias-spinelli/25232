@@ -4,7 +4,7 @@
   border-radius: 0.75rem;
   padding: 1rem;
   width: 100%;
-  max-width: 16rem;
+  max-width: 18rem;
   color: var(--color-text-light);
   box-shadow: var(--shadow-soft);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -12,15 +12,33 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  min-height: 320px;
+  box-sizing: border-box;
 }
 
-.product-item img {
+.image-wrapper {
   width: 100%;
-  height: auto;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
   border-radius: 0.5rem;
   border: 2px solid var(--color-secondary);
   box-shadow: var(--shadow-soft);
   margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
+.product-item:hover img {
+  transform: scale(1.05);
 }
 
 .product-item:hover {
@@ -47,32 +65,16 @@
   color: var(--color-accent);
   font-weight: 600;
   margin-top: 0.5rem;
+  font-size: 1.1rem;
 }
 
-.product-item a {
-  text-decoration: none;
-  color: inherit;
-}
+@media (max-width: 600px) {
+  .product-item {
+    max-width: 100%;
+    min-height: 280px;
+  }
 
-.product-actions {
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  width: 100%;
-}
-
-.product-actions button {
-  width: 100%;
-  background-color: var(--color-secondary);
-  border: none;
-  color: var(--color-text-dark);
-  font-weight: bold;
-  text-transform: uppercase;
-  transition: background-color 0.2s ease, transform 0.2s ease;
-}
-
-.product-actions button:hover {
-  background-color: var(--color-accent);
-  transform: scale(1.03);
+  .product-item h2 {
+    font-size: 1.2rem;
+  }
 }
