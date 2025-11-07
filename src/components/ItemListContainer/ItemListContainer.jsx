@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { ItemList } from "../ItemList/ItemList";
 import { useParams } from "react-router-dom";
 
-export const ItemListContainer = ({ titulo }) => {
+export const ItemListContainer = ({ titulo, subtitulo }) => {
   const [products, setProducts] = useState([]);
   const { category } = useParams();
 
@@ -25,7 +25,8 @@ export const ItemListContainer = ({ titulo }) => {
 
   return (
     <section className="item-list-container">
-      <h1>{titulo}</h1>
+      <h1>{category || titulo}</h1>
+        {subtitulo && <p className="item-subtitle">{subtitulo}</p>}
       <div className="item-grid">
         <ItemList lista={products} />
       </div>

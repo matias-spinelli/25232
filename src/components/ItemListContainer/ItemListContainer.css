@@ -27,3 +27,11 @@
   width: 100%;
   justify-items: center;
 }
+
+.item-subtitle {
+  font-size: 1.1rem;
+  color: var(--color-text-light);
+  text-align: center;
+  opacity: 0.8;
+  margin-top: -0.5rem;
+}

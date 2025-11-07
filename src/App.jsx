@@ -27,23 +27,23 @@ function App() {
       <CartProvider>
         <div className="app-layout">
           <Header />
-
           <main>
             <Routes>
               <Route
                 path={"/"}
-                element={<ItemListContainer titulo={"Bienvenidos a la tienda de Embark"} />}
+                element={<ItemListContainer 
+                  titulo={"Bienvenidos a Chuletute"} 
+                  subtitulo={"Tu parrilla online favorita 🔥"} />}
               />
               <Route
                 path={"/category/:category"}
-                element={<ItemListContainer titulo={"Bienvenidos a la tienda de Embark"} />}
+                element={<ItemListContainer/>}
               />
               <Route path={"/detail/:id"} element={<ItemDetailContainer />} />
               <Route path={"/carrito"} element={<Cart />} />
               <Route path={"/admin"} element={<ProductFormContainer />} />
             </Routes>
           </main>
-
           <Footer />
         </div>
       </CartProvider>

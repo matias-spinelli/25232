@@ -25,6 +25,29 @@
   },
   {
     "id": "4",
+    "name": "Entraña",
+    "price": 8800,
+    "category": "carnes",
+    "description": "Fina, tierna y con sabor intenso. La joya escondida de la parrilla argentina.",
+    "imageUrl": "/images/entrana.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Matambre",
+    "category": "carnes",
+    "description": "Corte plano y sabroso, ideal para hacerlo a la pizza o arrollado.",
+    "imageUrl": "/images/matambre.jpg"
+  },
+  {
+    "id": "6",
+    "name": "Bondiola",
+    "price": 9800,
+    "category": "carnes",
+    "description": "Corte de cerdo tierno y jugoso, con la grasa justa para un sabor increíble.",
+    "imageUrl": "/images/bondiola.jpg"
+  },
+  {
+    "id": "7",
     "name": "Chorizo Parrillero",
     "price": 1200,
     "category": "achuras",
@@ -32,7 +55,7 @@
     "imageUrl": "/images/chorizo.jpg"
   },
   {
-    "id": "5",
+    "id": "8",
     "name": "Morcilla",
     "price": 1000,
     "category": "achuras",
@@ -40,7 +63,7 @@
     "imageUrl": "/images/morcilla.webp"
   },
   {
-    "id": "6",
+    "id": "9",
     "name": "Chinchulín",
     "price": 800,
     "category": "achuras",
@@ -48,11 +71,43 @@
     "imageUrl": "/images/chinchulin.jpeg"
   },
   {
-    "id": "7",
+    "id": "10",
+    "name": "Mollejas",
+    "price": 8500,
+    "category": "achuras",
+    "description": "Tiernas por dentro y crocantes por fuera, las reinas de la parrilla gourmet.",
+    "imageUrl": "/images/mollejas.jpg"
+  },
+  {
+    "id": "11",
+    "name": "Riñones",
+    "price": 6500,
+    "category": "achuras",
+    "description": "Sabor intenso y textura única. Para los que disfrutan de la parrilla de verdad.",
+    "imageUrl": "/images/rinones.jpg"
+  },
+  {
+    "id": "12",
+    "name": "Provoleta",
+    "price": 2500,
+    "category": "otros",
+    "description": "Queso provolone derretido con orégano y ají molido. El mejor arranque del asado.",
+    "imageUrl": "/images/provoleta.jpg"
+  },
+  {
+    "id": "13",
     "name": "Empanadas de Carne",
     "price": 600,
     "category": "otros",
     "description": "Empanadas jugosas con carne cortada a cuchillo, porque siempre hay lugar para una más.",
     "imageUrl": "/images/empanadas.jpeg"
+  },
+  {
+    "id": "14",
+    "name": "Batata al Plomo",
+    "price": 950,
+    "category": "otros",
+    "description": "Batata cocida al rescoldo, con cáscara, dulzona y con el toque ahumado del carbón. Una guarnición de otro nivel.",
+    "imageUrl": "/images/batata-plomo.jpg"
   }
 ]
