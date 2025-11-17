@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Item } from "../Item/Item";
 import "./ItemList.css";
+import emptyImg from "../../assets/empty-v.png";
 
 export const ItemList = ({ lista }) => {
   return (
@@ -12,7 +13,14 @@ export const ItemList = ({ lista }) => {
           </Link>
         ))
       ) : (
-        <p className="item-list-empty">No hay productos disponibles 🍖</p>
+        <div className="item-list-empty">
+          <img
+            src={emptyImg}
+            alt="Sin productos disponibles"
+            className="empty-image"
+          />
+          <p>No hay productos disponibles</p>
+        </div>
       )}
     </div>
   );

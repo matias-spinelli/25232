@@ -36,6 +36,15 @@ Su objetivo es aprender, experimentar y crear una tienda / catálogo interactivo
 
 ------------------------------------------------------------------------
 
+## 📸 Screenshots
+
+| Listado                                         | Detalle                                         |
+| -------------------------------------------- | ---------------------------------------------------- |
+| <img src="https://github.com/matias-spinelli/matias-spinelli/blob/main/assets/simpsons_app/Listado.png" width="260"/> | <img src="https://github.com/matias-spinelli/matias-spinelli/blob/main/assets/simpsons_app/Detalle.png" width="260"/> |
+
+
+------------------------------------------------------------------------
+
 ## 📂 Estructura del proyecto
 
 src/

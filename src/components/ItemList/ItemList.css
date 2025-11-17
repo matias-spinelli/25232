@@ -1,16 +1,17 @@
 .item-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem; /* separación entre cards */
+  gap: 2rem;
   justify-items: center;
   align-items: stretch;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 2.5rem; /* más padding horizontal */
+  padding: 2rem 2.5rem;
   box-sizing: border-box;
 }
 
+/* Cards */
 .item-list a {
   text-decoration: none;
   color: inherit;
@@ -24,13 +25,29 @@
   filter: brightness(1.1);
 }
 
-/* Mensaje vacío */
+/* Estado vacío */
 .item-list-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  color: var(--color-text-light);
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 1.6rem;
-  letter-spacing: 1px;
-  opacity: 0.8;
   margin-top: 3rem;
+  color: var(--color-text-light);
+}
+
+.empty-image {
+  width: 320px;
+  max-width: 80%;
+  opacity: 0.9;
+  margin-bottom: 1.2rem;
+  object-fit: contain;
+}
+
+.item-list-empty p {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  opacity: 0.9;
+  color: var(--color-primary);
 }

@@ -28,6 +28,41 @@
   justify-items: center;
 }
 
+/* 🧺 Empty state */
+.cart-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.cart-empty-image {
+  width: 460px;
+  max-width: 80%;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+  object-fit: contain;
+}
+
+.cart-empty p {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  color: var(--color-primary);
+  opacity: 0.9;
+}
+
+/* 🧮 Total */
+.total-pagar p {
+  color: var(--color-text-light);
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* 🧠 Contenedor de botones */
 .btn-container {
   display: flex;
   flex-direction: column;
@@ -38,16 +73,12 @@
   margin-top: 1.5rem;
 }
 
-.total-pagar p {
-  color: var(--color-text-light);
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-align: center;
-}
-
-.btn {
+/* 🔘 Botones unificados */
+.btn,
+a.btn {
+  display: inline-block;
   background-color: var(--color-primary);
-  color: #fff;
+  color: #fff !important;
   border: none;
   padding: 0.6rem 1.4rem;
   border-radius: 10px;
@@ -56,11 +87,15 @@
   transition: all 0.2s ease;
   width: 100%;
   text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
-.btn:hover {
+.btn:hover,
+a.btn:hover {
   transform: scale(1.05);
   background-color: var(--color-secondary);
+  color: #fff;
 }
 
 .btn:disabled {
@@ -76,6 +111,23 @@
   opacity: 0.8;
 }
 
+.cart-item-wrapper {
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.cart-item-wrapper.fade-out {
+  opacity: 0;
+  transform: scale(0.95);
+  pointer-events: none;
+}
+
+.cart-grid.fade-out-group .cart-item-wrapper {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* 📱 Responsive */
 @media (max-width: 600px) {
   .item-list-container {
     padding: 1.5rem 1rem;
@@ -89,8 +141,10 @@
     max-width: 320px;
   }
 
-  .btn {
+  .btn,
+  a.btn {
     font-size: 0.9rem;
     padding: 0.5rem 1rem;
+    min-width: 140px;
   }
 }

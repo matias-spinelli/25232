@@ -64,24 +64,47 @@ h1, h2, h3, h4 {
   color: var(--color-primary);
 }
 
-/* 🔘 Botones */
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 600;
-  background-color: var(--color-secondary);
-  color: var(--color-text-dark);
+/* 🔘 Botones globales */
+button,
+.btn,
+a.btn {
+  display: inline-block;
+  border: none;
+  background-color: var(--color-primary);
+  color: #fff !important;
+  border-radius: 10px;
+  padding: 0.6rem 1.4rem;
+  font-weight: bold;
+  font-size: 1rem;
   cursor: pointer;
-  transition: all 0.25s ease;
+  transition: all 0.2s ease;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
   box-shadow: var(--shadow-soft);
-}
-button:hover {
-  background-color: var(--color-accent);
-  transform: translateY(-2px);
+  box-sizing: border-box;
 }
 
+button:hover,
+.btn:hover,
+a.btn:hover {
+  transform: scale(1.05);
+  background-color: var(--color-secondary);
+  color: #fff;
+}
+
+button:disabled,
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* 💡 Estado activo */
+button:active,
+.btn:active,
+a.btn:active {
+  transform: scale(0.97);
+}
 
 /* 💡 Modo claro opcional */
 @media (prefers-color-scheme: light) {
@@ -89,8 +112,11 @@ button:hover {
     color: var(--color-text-dark);
     background-color: var(--color-bg-light);
   }
-  button {
+
+  button,
+  .btn,
+  a.btn {
     background-color: var(--color-primary);
+    color: var(--color-text-dark);
   }
 }
-

@@ -2,22 +2,45 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 2rem;
+  padding: 2rem;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
-  background-color: var(--color-bg-dark);
-  border-radius: 12px;
+  gap: 1.2rem;
 }
 
 .item-list-container h1 {
   font-size: 2.2rem;
   color: var(--color-primary);
-  text-shadow: 0 0 10px rgba(255, 179, 71, 0.5);
   text-align: center;
   margin: 0;
+  line-height: 1.1;
+}
+
+.item-subtitle {
+  font-size: 1.1rem;
+  color: var(--color-text-light);
+  text-align: center;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.chulengo-image-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 0.3rem;
+}
+
+.chulengo-image {
+  width: 650px;
+  max-width: 95%;
+  opacity: 0.95;
+  object-fit: contain;
+  border: none;
+  box-shadow: none;
+  transition: none;
 }
 
 .item-grid {
@@ -26,12 +49,4 @@
   gap: 2rem;
   width: 100%;
   justify-items: center;
-}
-
-.item-subtitle {
-  font-size: 1.1rem;
-  color: var(--color-text-light);
-  text-align: center;
-  opacity: 0.8;
-  margin-top: -0.5rem;
 }

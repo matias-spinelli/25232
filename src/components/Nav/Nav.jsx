@@ -29,6 +29,9 @@ export const Nav = () => {
           <Link to="/category/achuras">Achuras</Link>
         </li>
         <li>
+          <Link to="/category/pollo">Pollo</Link>
+        </li>
+        <li>
           <Link to="/category/otros">Otros</Link>
         </li>
         <li>

@@ -1,5 +1,4 @@
-
-.product-form-container {
+.login-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,21 +9,21 @@
   box-sizing: border-box;
 }
 
-.product-form {
+.login-form {
   background-color: rgba(255, 255, 255, 0.05);
   border: 1px solid var(--border-color);
   border-radius: 1rem;
   box-shadow: var(--shadow-soft);
   padding: 2rem 2.5rem;
   width: 100%;
-  max-width: 480px;
+  max-width: 420px;
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
   box-sizing: border-box;
 }
 
-.product-form h2 {
+.login-form h2 {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 2.2rem;
   text-align: center;
@@ -33,18 +32,15 @@
   letter-spacing: 1px;
 }
 
-.product-form label {
+.login-form label {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 1.1rem;
   letter-spacing: 0.5px;
   color: var(--color-text-light);
   margin-bottom: 0.2rem;
-  display: block;
 }
 
-.product-form input,
-.product-form textarea,
-.product-form select {
+.login-form input {
   width: 100%;
   padding: 0.6rem 0.8rem;
   border-radius: 0.5rem;
@@ -55,38 +51,25 @@
   outline: none;
   transition: border-color 0.2s ease, background-color 0.2s ease;
   box-sizing: border-box;
-  resize: none;
 }
 
-.product-form input:focus,
-.product-form textarea:focus,
-.product-form select:focus {
+.login-form input:focus {
   border-color: var(--color-primary);
   background-color: rgba(255, 255, 255, 0.12);
 }
 
-.product-form button {
+.login-form button {
   margin-top: 0.5rem;
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 1.2rem;
-  letter-spacing: 0.5px;
-}
-
-/* 🧯 Error messages */
-.product-form .error {
-  color: #ff6b6b;
-  font-size: 0.9rem;
-  margin-top: 0.3rem;
 }
 
 /* 🧩 Responsive */
 @media (max-width: 600px) {
-  .product-form {
+  .login-form {
     padding: 1.5rem;
     max-width: 90%;
   }
 
-  .product-form h2 {
+  .login-form h2 {
     font-size: 1.8rem;
   }
 }

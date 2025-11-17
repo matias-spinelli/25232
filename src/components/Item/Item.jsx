@@ -30,7 +30,11 @@ export const Item = ({ name, price, description, imageUrl, children }) => {
 
         <p className="description">{description}</p>
 
-        {!unavailable && children}
+        {!unavailable && (
+          <div className="children-container">
+            {children}
+          </div>
+        )}
       </article>
 
       {unavailable && <div className="availability-badge">No Disponible</div>}

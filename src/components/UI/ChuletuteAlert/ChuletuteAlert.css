@@ -1,0 +1,70 @@
+.chuletute-alert-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  backdrop-filter: blur(4px);
+}
+
+.chuletute-alert-box {
+  background-color: var(--color-bg-dark);
+  border: 2px solid var(--color-primary);
+  border-radius: 15px;
+  padding: 1.5rem 2rem;
+  max-width: 350px;
+  text-align: center;
+  box-shadow: var(--shadow-strong);
+  animation: fadeIn 0.3s ease-out;
+}
+
+.chuletute-alert-box p {
+  font-size: 1.2rem;
+  color: var(--color-text-light);
+  margin-bottom: 1.2rem;
+}
+
+/* Colores por tipo */
+.chuletute-info {
+  border-color: var(--color-accent);
+}
+
+.chuletute-success {
+  border-color: #4caf50;
+}
+
+.chuletute-error {
+  border-color: #ff3b3b;
+}
+
+.chuletute-warning {
+  border-color: #ffa500;
+}
+
+/* Botones */
+.chuletute-alert-buttons {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+}
+
+.btn-cancel {
+  background-color: #555;
+}
+
+.btn-cancel:hover {
+  background-color: #333;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
