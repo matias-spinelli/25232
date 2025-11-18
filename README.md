@@ -48,12 +48,9 @@ Su objetivo es aprender, experimentar y crear una tienda / catálogo interactivo
 | <img src="https://github.com/matias-spinelli/matias-spinelli/blob/main/assets/ChuleTuTe/AddProduct.png"/> |
 
 
-<!-- | Home                                         | Detalle                                         |
-| -------------------------------------------- | ---------------------------------------------------- |
-| <img src="https://github.com/matias-spinelli/matias-spinelli/blob/main/assets/ChuleTuTe/HomeMobile.png" width="260"/> | <img src="https://github.com/matias-spinelli/matias-spinelli/blob/main/assets/ChuleTuTe/DetalleMobile.png" width="260"/> |
-| Cart                                         | Add Product                                         |
-| -------------------------------------------- | ---------------------------------------------------- |
-| <img src="https://github.com/matias-spinelli/matias-spinelli/blob/main/assets/ChuleTuTe/CartMobile.png" width="260"/> | <img src="https://github.com/matias-spinelli/matias-spinelli/blob/main/assets/ChuleTuTe/AddProductMobile.png" width="260"/> | -->
+| Home                                         | Detalle                                         | Cart                                         |
+| -------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------- |
+| <img src="https://github.com/matias-spinelli/matias-spinelli/blob/main/assets/ChuleTuTe/HomeMobile.png" width="260"/> | <img src="https://github.com/matias-spinelli/matias-spinelli/blob/main/assets/ChuleTuTe/DetailMobile.png" width="260"/> | <img src="https://github.com/matias-spinelli/matias-spinelli/blob/main/assets/ChuleTuTe/CartMobile.png" width="260"/> |
 
 ------------------------------------------------------------------------
 
