@@ -40,14 +40,10 @@ Su objetivo es aprender, experimentar y crear una tienda / catálogo interactivo
 
 ### 🖥️ Desktop
 
-| Home |
-| <img src="https://github.com/matias-spinelli/matias-spinelli/blob/main/assets/ChuleTuTe/Home.png" width="600"/> |
-| Detalle |
-| <img src="https://github.com/matias-spinelli/matias-spinelli/blob/main/assets/ChuleTuTe/Detail.png" width="600"/> |
-| Cart |
-| <img src="https://github.com/matias-spinelli/matias-spinelli/blob/main/assets/ChuleTuTe/Cart.png" width="600"/> |
-| Add Product |
-| <img src="https://github.com/matias-spinelli/matias-spinelli/blob/main/assets/ChuleTuTe/AddProduct.png" width="600"/> |
+| Home | <img src="https://github.com/matias-spinelli/matias-spinelli/blob/main/assets/ChuleTuTe/Home.png"/> |
+| Detalle | <img src="https://github.com/matias-spinelli/matias-spinelli/blob/main/assets/ChuleTuTe/Detail.png"/> |
+| Cart |  <img src="https://github.com/matias-spinelli/matias-spinelli/blob/main/assets/ChuleTuTe/Cart.png"/> |
+| Add Product | <img src="https://github.com/matias-spinelli/matias-spinelli/blob/main/assets/ChuleTuTe/AddProduct.png"/> |
 
 ---
 
