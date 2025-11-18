@@ -39,11 +39,9 @@ Su objetivo es aprender, experimentar y crear una tienda / catálogo interactivo
 ## 📸 Screenshots
 
 | Home                                         | 
-| -------------------------------------------- | 
 | <img src="https://github.com/matias-spinelli/matias-spinelli/blob/main/assets/ChuleTuTe/Home.png"/> | 
 | Detalle                                         |
-| ---------------------------------------------------- | 
-| <img src="https://github.com/matias-spinelli/matias-spinelli/blob/main/assets/ChuleTuTe/Detaile.png"/> | 
+| <img src="https://github.com/matias-spinelli/matias-spinelli/blob/main/assets/ChuleTuTe/Detail.png"/> | 
 | Cart                                         | 
 | <img src="https://github.com/matias-spinelli/matias-spinelli/blob/main/assets/ChuleTuTe/Cart.png"/> | 
 | Add Product                                         |
@@ -61,6 +59,7 @@ Su objetivo es aprender, experimentar y crear una tienda / catálogo interactivo
 
 ## 📂 Estructura del proyecto
 
+```
 src/
 ├── assets/ # Imágenes, íconos y recursos estáticos
 ├── components/ # Componentes reutilizables (Header, Footer, Item, etc.)
@@ -69,7 +68,7 @@ src/
 ├── App.jsx # Raíz principal de la aplicación
 ├── main.jsx # Punto de entrada (Vite)
 └── styles/ # Archivos CSS globales o por componente
-
+```
 
 ------------------------------------------------------------------------
 
