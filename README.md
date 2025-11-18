@@ -61,13 +61,40 @@ Su objetivo es aprender, experimentar y crear una tienda / catálogo interactivo
 
 ```
 src/
-├── assets/ # Imágenes, íconos y recursos estáticos
-├── components/ # Componentes reutilizables (Header, Footer, Item, etc.)
-├── pages/ # Páginas principales (Home, Carrito, Detalle, etc.)
-├── data/ # Datos locales mockeados (products.json)
-├── App.jsx # Raíz principal de la aplicación
-├── main.jsx # Punto de entrada (Vite)
-└── styles/ # Archivos CSS globales o por componente
+├── assets/                 # Imágenes, íconos y recursos estáticos
+├── components/             # Componentes reutilizables
+│   ├── Cart/
+│   ├── Count/
+│   ├── FallbackImage/
+│   ├── Footer/
+│   ├── Header/
+│   ├── Item/
+│   ├── ItemDetail/
+│   ├── ItemDetailContainer/
+│   ├── ItemList/
+│   ├── ItemListContainer/
+│   ├── Login/
+│   ├── Nav/
+│   ├── ParrilleroToggle/
+│   ├── RutaProtegida/
+│   ├── UI/                # Loader, Alert y utilidades UI
+│   ├── adminComponents/   # Componentes del panel admin
+│   └── boton.jsx
+│
+├── context/                # Context API (Auth + Cart)
+│   ├── AuthContext/
+│   └── CartContext/
+│
+├── layouts/                # Layouts principales (Main y Admin)
+│
+├── services/               # Llamadas a API y subida de imágenes
+│
+├── utils/                  # Helpers (priceFormatter, validators)
+│
+├── App.jsx                 # Root component
+├── main.jsx                # Entry point (Vite)
+└── index.css               # Estilos globales
+
 ```
 
 ------------------------------------------------------------------------
