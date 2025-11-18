@@ -31,11 +31,11 @@ export const ItemListContainer = ({ titulo, subtitulo }) => {
       <h1>{category || titulo}</h1>
       {subtitulo && <p className="item-subtitle">{subtitulo}</p>}
 
-      {!category && (
+      {/* {!category && (
         <div className="chulengo-image-wrapper">
           <img src={chulengoImg} alt="Chulengo" className="chulengo-image" />
         </div>
-      )}
+      )} */}
 
       {loading && <Loader />}
 

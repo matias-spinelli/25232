@@ -1,4 +1,4 @@
-# ChuleTuTe 🍖🔥
+# ChuleTuTe 🔥
 
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
@@ -7,20 +7,20 @@
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
 **ChuleTuTe** es una aplicación web desarrollada en **React + Vite**  
-con el espíritu del fuego, la parrilla y el buen humor 😎🔥  
+con el espíritu del fuego, la parrilla y el buen humor 🔥  
 Su objetivo es aprender, experimentar y crear una tienda / catálogo interactivo de productos parrilleros con estilo *modo brasa*.
 
 ------------------------------------------------------------------------
 
 ## 🚀 Tecnologías utilizadas
 
-- ⚛️ **React 18+**
-- ⚡ **Vite**
-- 💅 **CSS3 / Flexbox / Grid**
-- 🧠 **Hooks (useState, useEffect, useParams, etc.)**
-- 🔗 **React Router DOM**
-- 🛍️ **JSON Data Fetching**
-- 📦 **LocalStorage API**
+-  **React 18+**
+-  **Vite**
+-  **CSS3 / Flexbox / Grid**
+-  **Hooks (useState, useEffect, useParams, etc.)**
+-  **React Router DOM**
+-  **JSON Data Fetching**
+-  **LocalStorage API**
 
 ------------------------------------------------------------------------
 
@@ -38,10 +38,20 @@ Su objetivo es aprender, experimentar y crear una tienda / catálogo interactivo
 
 ## 📸 Screenshots
 
-| Listado                                         | Detalle                                         |
+| Home                                         | Detalle                                         |
 | -------------------------------------------- | ---------------------------------------------------- |
-| <img src="https://github.com/matias-spinelli/matias-spinelli/blob/main/assets/simpsons_app/Listado.png" width="260"/> | <img src="https://github.com/matias-spinelli/matias-spinelli/blob/main/assets/simpsons_app/Detalle.png" width="260"/> |
+| <img src="https://github.com/matias-spinelli/matias-spinelli/blob/main/assets/ChuleTuTe/Home.png" width="640"/> | <img src="https://github.com/matias-spinelli/matias-spinelli/blob/main/assets/ChuleTuTe/Detalle.png" width="640"/> |
+| Cart                                         | Add Product                                         |
+| -------------------------------------------- | ---------------------------------------------------- |
+| <img src="https://github.com/matias-spinelli/matias-spinelli/blob/main/assets/ChuleTuTe/Cart.png" width="640"/> | <img src="https://github.com/matias-spinelli/matias-spinelli/blob/main/assets/ChuleTuTe/AddProduct.png" width="640"/> |
 
+
+<!-- | Home                                         | Detalle                                         |
+| -------------------------------------------- | ---------------------------------------------------- |
+| <img src="https://github.com/matias-spinelli/matias-spinelli/blob/main/assets/ChuleTuTe/HomeMobile.png" width="260"/> | <img src="https://github.com/matias-spinelli/matias-spinelli/blob/main/assets/ChuleTuTe/DetalleMobile.png" width="260"/> |
+| Cart                                         | Add Product                                         |
+| -------------------------------------------- | ---------------------------------------------------- |
+| <img src="https://github.com/matias-spinelli/matias-spinelli/blob/main/assets/ChuleTuTe/CartMobile.png" width="260"/> | <img src="https://github.com/matias-spinelli/matias-spinelli/blob/main/assets/ChuleTuTe/AddProductMobile.png" width="260"/> | -->
 
 ------------------------------------------------------------------------
 
