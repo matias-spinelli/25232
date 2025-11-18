@@ -16,7 +16,7 @@
   box-shadow: var(--shadow-soft);
   padding: 2rem 2.5rem;
   width: 100%;
-  max-width: 480px;
+  max-width: 480px;     /* ancho fijo máximo */
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
@@ -41,11 +41,12 @@
   display: block;
 }
 
+/* inputs generales */
 .product-form input,
 .product-form textarea,
 .product-form select {
   width: 100%;
-  padding: 0.6rem 0.8rem;
+  padding: 0.6rem 1rem; /* ⬅ padding para la flecha del select */
   border-radius: 0.5rem;
   border: 1px solid var(--border-color);
   background-color: rgba(255, 255, 255, 0.08);
@@ -57,6 +58,16 @@
   resize: none;
 }
 
+/* select con flechita personalizada */
+.select-category {
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%23f5f5f5' height='24' width='24' viewBox='0 0 24 24'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1.2rem;
+  padding-right: 2.5rem;
+}
+
 .product-form input:focus,
 .product-form textarea:focus,
 .product-form select:focus {
@@ -64,25 +75,89 @@
   background-color: rgba(255, 255, 255, 0.12);
 }
 
-.product-form button {
+/* --- FILE INPUT --- */
+/* wrapper fijo que no estire el form */
+.file-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: nowrap;     /* que no salte a la linea de abajo */
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;      /* evita que algo sobresalga y redimensione */
+  justify-content: flex-start;
+}
+
+/* botón custom para file: ANULAMOS width:100% global */
+.file-btn {
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease;
+  flex-shrink: 0;        /* no achicar */
+  width: auto !important;/* ANULA la regla global que pone width:100% */
+  display: inline-block;
+  min-width: 140px;      /* opcional: que tenga un ancho base */
+}
+
+.file-btn:hover {
+  transform: scale(1.05);
+  background-color: var(--color-secondary);
+}
+
+/* nombre del archivo: truncado y sin forzar ancho */
+.file-name {
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+  opacity: 0.8;
+  max-width: calc(100% - 160px); /* deja espacio al botón (ajustable) */
+  min-width: 0;          /* CRUCIAL para que ellipsis funcione en flex */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-grow: 1;          /* ocupa el espacio sobrante */
+}
+
+/* Si no hay texto, ocultamos contenido extra */
+.file-name:empty::after {
+  content: "";
+}
+
+/* --- Errors --- */
+
+.product-form .error {
+  color: #ff6b6b;
+  font-size: 0.9rem; /* mismo tamaño que file-name */
+  margin-top: 0.2rem;
+}
+
+.file-error {
+  margin-top: 0.4rem;
+}
+
+/* submit button: mantiene comportamiento global (full width) */
+.product-form button[type="submit"] {
   margin-top: 0.5rem;
   font-family: 'Bebas Neue', sans-serif;
   font-size: 1.2rem;
   letter-spacing: 0.5px;
 }
 
-/* 🧯 Error messages */
-.product-form .error {
-  color: #ff6b6b;
-  font-size: 0.9rem;
-  margin-top: 0.3rem;
-}
-
-/* 🧩 Responsive */
+/* Responsive */
 @media (max-width: 600px) {
   .product-form {
     padding: 1.5rem;
     max-width: 90%;
+  }
+
+  .file-name {
+    max-width: 120px;
   }
 
   .product-form h2 {

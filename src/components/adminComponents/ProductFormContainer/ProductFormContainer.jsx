@@ -4,8 +4,11 @@ import { ProductFormUI } from "../ProductFormUI/ProductFormUI";
 import { uploadToImgbb } from "../../../services/uploadImage";
 import { createProducts } from "../../../services/products";
 import "../ProductFormContainer/ProductFormContainer.css";
+import { useChuletuteAlertContext } from "../../UI/ChuletuteAlert/useChuletuteAlertContext";
 
 export const ProductFormContainer = () => {
+  const { showAlert } = useChuletuteAlertContext();
+  
   const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState({});
   const [file, setFile] = useState(null);
@@ -42,7 +45,7 @@ export const ProductFormContainer = () => {
       };
 
       await createProducts(productData);
-      alert("Producto cargado con éxito");
+      showAlert("Producto cargado con éxito", "success");
 
       setProduct({ name: "", price: "", description: "", category: "" });
       setFile(null);

@@ -4,31 +4,27 @@ import { ItemList } from "../ItemList/ItemList";
 import { useParams } from "react-router-dom";
 import chulengoImg from "../../assets/chulengo.png";
 import { getProducts } from "../../services/products";
+import { Loader } from "../UI/Loader/Loader";
 
 export const ItemListContainer = ({ titulo, subtitulo }) => {
   const [products, setProducts] = useState([]);
   const { category } = useParams();
 
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
+    setLoading(true);
+    setProducts([]);
 
-    getProducts(category).then((data)=> setProducts(data))
-    .catch((error) => console.log(error));
+    getProducts(category)
+      .then((data) => {
+        setProducts(data);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+
   }, [category]);
-
-  //   fetch("/data/products.json")
-  //     .then((res) => {
-  //       if (!res.ok) throw new Error("Hubo un error");
-  //       return res.json();
-  //     })
-  //     .then((data) => {
-  //       if (category) {
-  //         setProducts(data.filter((prod) => prod.category === category));
-  //       } else {
-  //         setProducts(data);
-  //       }
-  //     })
-  //     .catch((error) => console.log(error));
-  // }, [category]);
 
   return (
     <section className="item-list-container">
@@ -41,9 +37,13 @@ export const ItemListContainer = ({ titulo, subtitulo }) => {
         </div>
       )}
 
-      <div className="item-grid">
-        <ItemList lista={products} />
-      </div>
+      {loading && <Loader />}
+
+      {!loading && (
+        <div className="item-grid">
+          <ItemList lista={products} />
+        </div>
+      )}
     </section>
   );
 };

@@ -19,7 +19,18 @@ export const ProductFormUI = ({product, errors, loading, onChange, onFileChange,
 
             <div>
                 <label>Categoria:</label>
-                <input type="text" name="category" value={product.category} onChange={onChange} required/>
+                <select
+                    name="category"
+                    value={product.category}
+                    onChange={onChange}
+                    required
+                >
+                    <option value="">Seleccionar categoría...</option>
+                    <option value="Carnes">Carnes</option>
+                    <option value="Achuras">Achuras</option>
+                    <option value="Pollo">Pollo</option>
+                    <option value="Otros">Otros</option>
+                </select>
 
                 {errors.category && <p className="error">{errors.category}</p>}
             </div>

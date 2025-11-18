@@ -50,3 +50,16 @@
   width: 100%;
   justify-items: center;
 }
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.3rem;
+  color: var(--accent-color);
+  animation: pulse 0.8s infinite alternate;
+}
+
+@keyframes pulse {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}

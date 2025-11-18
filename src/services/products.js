@@ -16,18 +16,23 @@ export const createProducts = async (product) => {
 };
 
 export const getProducts = async (category) => {
-    let url = BASE_URL;
-    if (category) {
-        url = `${BASE_URL}?category=${category}`
+    try { 
+        let url = BASE_URL;
+        if (category) {
+            url = `${BASE_URL}?category=${category}`
+        }
+
+        const res = await fetch(url);
+        if (!res.ok) {
+            return []; //throw new Error("Error al listar productos");
+        }
+
+        const results = await res.json();
+        return results;
+    } catch {
+        return [];
     }
 
-    const res = await fetch(url);
-    if (!res.ok) {
-        throw new Error("Error al listar productos");
-    }
-
-    const results = await res.json();
-    return results;
 }
 
 export const getProductById = async (id) => {

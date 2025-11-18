@@ -2,10 +2,12 @@ import "./Login.css"
 import { useState } from "react"
 import { useAuthContext } from "../../context/AuthContext/useAuthContext"
 import { Navigate, useNavigate } from "react-router-dom"
+import { useChuletuteAlertContext } from "../UI/ChuletuteAlert/useChuletuteAlertContext";
 
 export const Login = () => {
     const [userForm, setUserForm] = useState({ name: "", password: "" })
     const { user, login } = useAuthContext()
+    const { showToast } = useChuletuteAlertContext();
 
     const navigate = useNavigate()
 
@@ -25,7 +27,7 @@ export const Login = () => {
         if(sucess) {
             navigate("/admin/alta-productos")
         } else {
-            alert("Credenciales incorrectas")
+            showToast(`${item.name} agregado al carrito`, "error");
             setUserForm({ name: "", password: "" })
         }
     }
